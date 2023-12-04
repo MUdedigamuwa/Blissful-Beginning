@@ -1,0 +1,445 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: Cormorant-Light;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(fnt.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar{
+    width:95%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.logo{
+    
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fdfdfe;;
+    text-transform: none;
+    position: relative;
+    transition: 0.3s ease;
+}
+.banner .navbar ul li a:before{
+    content: "";
+    position:absolute;
+    background: #888a8a;
+    width: 0;
+    height:3px;
+    bottom:0;
+    left:0;
+    transition:0.3s ease;
+
+}
+.banner .navbar ul li a:hover:before{
+    width:100%;
+
+
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: silver;
+}
+.content h1{
+    font-family: Cormorant-Light;
+    font: size 30px; 
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    margin-left: 30px;
+    line-height: 25px;
+}
+.me{
+    width: 100%;
+    position: relative;
+    min-height:30vh;
+    display: flex;
+    
+    transform: translateY(-50%);
+    flex-direction: column;
+    background-color: white;
+    top:180%;
+    background-attachment: fixed;
+}
+
+.me h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: dotted;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    color:rgb(123, 120, 120);
+}
+.me p{
+    margin-bottom: 30px;
+    font-size: 15px;
+    
+    top:20%;
+    
+}
+.me h3{
+    
+    
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.me .gift{
+    width:10%;
+    height:10%;
+
+}
+.me {
+    position: relative;
+}
+button{
+    left:8px;
+    width: 180px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 25px ;
+    font-weight: bold;
+    border: 1px solid #f5f7f7;
+    background: transparent;
+    color: silver;
+    cursor: pointer;
+    position:relative ;
+    overflow: hidden;
+}
+span{
+    background: #506363;
+    height: 100%;
+    width: 0;
+    border: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+button:hover span{
+    width: 100px;
+}
+button:hover{
+    border: none;
+}
+.flip-card {
+    margin-left: 40px;
+    align-items: center;
+    background-color: transparent;
+    width: 320px;
+    height: 220px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    font-size: 12px;
+    
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    color: black;
+    transform: rotateY(180deg);
+  }
+  .me ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  .flip-card .flip-card-front .title{
+    font-weight:900;
+    font-size:12px;
+    color:#424144;
+    padding:0 20px;
+    
+}
+.container {
+    max-width: 1200px;
+    width: 95%;
+    
+  }
+  .slider-wrapper {
+    position: relative;
+  }
+  .overlay-text{
+    position: relative;
+  }
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 20px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 80%;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+  }
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+  }
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+  }
+  /* Styles for mobile and tablets */
+  @media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+      display: none !important;
+    }
+    .slider-wrapper .image-list {
+      gap: 10px;
+      margin-bottom: 15px;
+      scroll-snap-type: x mandatory;
+    }
+    .slider-wrapper .image-list .image-item {
+      width: 280px;
+      height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+      width: 20%;
+    }
+  
+}
+.footer {
+    position: absolute;
+    top: 340%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1349px;
+    width: 200%;
+    background: white;
+    border-radius: 6px;
+  }
+.footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+.footer-row .footer-col h4 {
+    color: #424144;
+    font-size: 15px;
+    font-weight: 400;
+  }
+.footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footer-col .links li a:hover {
+    color: #000;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 40px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid #7489C6 ;
+    caret-color: #fff;
+    color: black;
+    padding-left: 10px;
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  .footer-col .icons i:hover  {
+    color: black;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 10px 0 0 0;
+    }
+  }
