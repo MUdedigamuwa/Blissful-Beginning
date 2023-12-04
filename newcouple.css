@@ -1,0 +1,129 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: Cormorant-Light;
+    background-color: rgb(223, 216, 216);
+}
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    background:rgb(223, 216, 216);
+    display: fixed;
+    justify-content: space-between;
+    align-items: left;
+    z-index: 99;
+}
+.navbar{
+   
+    color: #b1b4b4;
+    width:85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #989494;;
+    text-transform: none;
+    
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e7eded;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width:100%;
+}
+.content{
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(#989494);
+    }
+    .content h1{
+        font-size: 36px;
+        text-align: center;
+       font-family:Cormorant-Light ;
+       color: #989494;
+    
+    }
+    .content .input-box{
+     
+      position: relative;
+      width: 100%;  
+      height: 50px;
+     
+      
+    }
+    .content .input-box input{
+        width: 250px;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+      
+       font-size: 16px;
+       color:black;
+       
+    }
+    .input-box input::placeholder{
+        color:rgb(#989494);
+        font-size: 14px;
+    }
+    .input-box i{
+        position: absolute;
+        right: 20px;
+        top:50px ;
+        transform: translateY(-50%);
+        font-size: 20px;
+    
+    }
+    .content .btn{
+        width: 10%;
+        height: 30px;
+        background: transparent;
+        border: black;
+        outline: none;
+        border-radius: 10px;
+        box-shadow:0 0 10px rgba(19, 18, 18, 0.2) ;
+        text-align: center;
+        cursor: pointer;
+        font-size: 12px;
+        color:rgb(57, 54, 54);
+        font-weight: 600;
+    }
+    .content p {
+        text-align: center;
+        font-size: 14px;
+        color: #989494;
+    }
+    .content label{
+        color: #989494;
+        font-size: 15px;
+    }
+    
