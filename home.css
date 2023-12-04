@@ -1,0 +1,235 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: Cormorant-Light;
+    box-sizing: border-box;
+
+}
+.banner{
+    width: 100%;
+    height: 130vh;
+    background-color:#fcfaf9;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar{
+    width:100%;
+    margin:auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#DDD0C8 ;
+    background-attachment: fixed;
+
+}
+.logo{
+    
+    width: 120px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#323232 ;;
+    text-transform: none;
+    position: relative;
+    transition: 0.3s ease;
+}
+.banner .navbar ul li a:before{
+    content: "";
+    position:absolute;
+    background: #4dd3d3;
+    width: 0;
+    height:3px;
+    bottom:0;
+    left:0;
+    transition:0.3s ease;
+
+}
+.banner .navbar ul li a:hover:before{
+    width:100%;
+
+
+}
+.container{
+    display:flex;
+}
+.sidebar{
+    width:25%;
+    height:100vh;
+    padding:50px 0;
+    align-items: left;
+    background-color:white;
+    position:fixed;
+}
+.sidebar>h3{
+    color:#989494;
+    padding-left:40px;
+}
+.filter{
+    margin-top:50px;
+    padding:30px 40px;
+}
+.filter h3{
+    margin-bottom:30px;
+}
+.contant{
+    width:70%;
+    position:absolute;
+    right:0;
+}
+.header{
+    display:flex;
+    align-items: center;
+    justify-content:center ;
+    height:10vh;
+    border-bottom: 1px solid #eee; 
+    color: #383838;
+    background-color: white; 
+    text-decoration: dotted;
+}
+.header p{
+    font-family: Cormorant-Light;
+    font-size: 30px;
+    color:#989494 ;
+    font-weight: bold;
+    text-decoration: dotted;
+}
+.fil-p{
+    padding:5px 15px;
+    background-color: white;
+    margin: 7px 0;
+    cursor:pointer;
+    color: #333;
+    text-align: justify;
+}
+.fil-p:hover{
+    color:black;
+    background-color: #DDD0C8;
+
+}
+button{
+    width:100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: black;
+
+}
+#root{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    padding:30px;
+}
+.box{
+    width:100%;
+    background: #fcfaf9;
+    box-shadow: 0 10px 20px rgb(0,0,0,0.3);
+    border-radius:5px;
+    padding:5px;
+    margin-bottom:20px;
+}
+.box>h3{
+    font-size: 18px;
+    margin-bottom:20px;
+    color:#424144;
+}
+.img-box{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 20px;
+}
+.images{
+    max-height:80%;
+    max-width:98%;
+    object-fit:cover;
+    object-position:center ;
+}
+.bottom{
+    text-align: center;
+    
+    font-size:13px;
+    color:#323232;
+    padding: 10px 18px;
+    font-weight:900;
+    border:1px solid black;
+    border-radius: 20px;
+
+}
+h2{
+    font-size:20px;
+    color:#989494;
+
+}
+button:hover{
+    cursor:pointer;
+    background-color:#DDD0C8;
+    color:black;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #DDD0C8;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: #DDD0C8;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
